@@ -22,4 +22,4 @@ Written by Roman Ovseitsev <romovs@gmail.com>
 
 ### License
 
-Released under a GPLv2. See the LICENSE file.
+Released under GPLv2. See LICENSE file.
