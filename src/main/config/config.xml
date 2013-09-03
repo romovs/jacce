@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <cache-factory>
+
+		<cache id="concurrent_cache" desc="Test cache"
+				capacity="1000"
+				memory-size="50m"
+				cacheClassName="org.jacce.cache.car.ConcurrentCARCache"/>
+
+        <cache id="timed_concurrent_cache" desc="..." 
+				cacheClassName="org.jacce.cache.car.ConcurrentCARCacheTimed">
+        	
+			<cleanup clean-interval="600"
+						ttl="1h"                  
+						idle-period="30m" /> 
+        </cache>	
+
+        <cache id="lru_cache" desc="..."
+				memory-size="50m"
+				cacheClassName="org.jacce.cache.car.ConcurrentCARCache" />
+
+	</cache-factory>
